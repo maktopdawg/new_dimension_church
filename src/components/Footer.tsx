@@ -48,9 +48,9 @@ const Footer = () => {
 
                     <ul>
                         <h3 className='mb-5 font-bold uppercase text-xl'>Church</h3>
-                        <li>2023 HitRefresh. <b/><br/>All rights reserved.</li>
-                        <li>Privacy Policy</li>
-                        <li>Terms of use</li>
+                        <li className='mb-4'>2023 HitRefresh. <b/><br/>All rights reserved.</li>
+                        <li className='mb-4'>Privacy Policy</li>
+                        <li className='mb-4'>Terms of use</li>
                     </ul>
                 </section>
             </section>
