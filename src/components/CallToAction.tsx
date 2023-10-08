@@ -9,7 +9,7 @@ const CallToAction = () => {
 
                 <p className='text-center'>We are teachers of the Word of God with simplicity & practicality demonstrating the power of the kingdom of Heaven here on Earth</p>
 
-                <p className='text-center'>To impact lives of families and individuals, with God's word that begins to change the city of Fourways to a city that loves and serves God's purpose.</p>
+                <p className='text-center'>To impact lives of families and individuals, with God&apos;s word that begins to change the city of Fourways to a city that loves and serves God&apos;s purpose.</p>
 
                 <Link href='#'><h2 className='border w-44 p-3 text-center rounded-3xl text-white hover:bg-white hover:text-secondary transition duration-300 ease-in-out'>Read More</h2></Link>
             </div>

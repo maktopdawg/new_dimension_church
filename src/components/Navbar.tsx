@@ -21,7 +21,7 @@ const Navbar = () => {
                     <section className='flex gap-9 items-center'>
                         <ul className='hidden md:flex gap-5'>
                             {menu_elements.map((item) => (
-                                <Link href="#"><li key={item} className='text-base text-white'>{item}</li></Link>
+                                <Link key={item} href="#"><li className='text-base text-white'>{item}</li></Link>
                             ))}
                         </ul>
 

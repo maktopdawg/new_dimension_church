@@ -1,11 +1,10 @@
 import React from 'react'
 import Link from 'next/link'
 
-let address = <span>2023 HitRefresh. <b/><br/>All rights reserved.</span>
+let address = <span></span>
 const footer_elements = [
     ['About Us', 'Events', 'Contact Us'],
     ['Facebook', 'Instagram', 'Twitter'],
-    [address, 'Privacy Policy', 'Terms of use']
 ]
 
 const Footer = () => {
@@ -36,22 +35,22 @@ const Footer = () => {
                     <ul>
                         <h3 className='mb-5 font-bold uppercase text-xl'>Resources</h3>
                         {footer_elements[0].map((item) => (
-                            <Link href="#"><li key={Date.now()} className='mb-4'>{item}</li></Link>
+                            <li key={item} className='mb-4'><Link href="#">{item}</Link></li>
                         ))}
                     </ul>
 
                     <ul>
                         <h3 className='mb-5 font-bold uppercase text-xl'>Social</h3>
                         {footer_elements[1].map((item) => (
-                            <Link href="#"><li key={Date.now()} className='mb-4'>{item}</li></Link>
+                            <li key={item} className='mb-4'><Link href="#">{item}</Link></li>
                         ))}
                     </ul>
 
                     <ul>
                         <h3 className='mb-5 font-bold uppercase text-xl'>Church</h3>
-                        {footer_elements[2].map((item) => (
-                            <Link href="#"><li key={Date.now()} className='mb-4'>{item}</li></Link>
-                        ))}
+                        <li>2023 HitRefresh. <b/><br/>All rights reserved.</li>
+                        <li>Privacy Policy</li>
+                        <li>Terms of use</li>
                     </ul>
                 </section>
             </section>
