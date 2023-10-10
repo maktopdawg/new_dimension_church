@@ -10,7 +10,7 @@
 }
 
 .praying-members {
-  background: url('../assets/88.png') no-repeat center center/cover;
+  background: url('../assets/88.png') no-repeat fixed center/cover;
 }
 
 .singing-member {
@@ -18,7 +18,7 @@
 }
 
 .join-us-bg {
-  background: url('../assets/ND-111.jpg') no-repeat center center/cover;
+  background: url('../assets/ND-111.jpg') no-repeat fixed center center/cover;
 }
 
 li {

@@ -3,7 +3,7 @@ import './globals.css'
 import type { Metadata } from 'next'
 import { Poppins } from 'next/font/google'
 
-const poppins = Poppins({weight: '600', subsets: ['devanagari', 'latin', 'latin-ext']})
+const poppins = Poppins({weight: '400', subsets: ['devanagari', 'latin', 'latin-ext']})
 
 export const metadata: Metadata = {
   title: 'New Dimension Church',
