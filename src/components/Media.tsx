@@ -1,6 +1,4 @@
 import React from 'react'
-import Image from 'next/image'
-import PlayButton from '@/assets/Play Button.svg'
 
 const Media = () => {
     const content = (

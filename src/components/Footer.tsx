@@ -1,5 +1,6 @@
 import React from 'react'
 import Link from 'next/link'
+import uniqid from 'uniqid'
 
 let address = <span></span>
 const footer_elements = [
@@ -22,7 +23,7 @@ const Footer = () => {
                     <span>
                         <p className='mb-2 text-center sm:text-left text-lg'>Address:</p>
                         {footer_elements[2].map((item) => (
-                            <li key={footer_elements[2].indexOf(item)} className='text-sm md:text-base'>{item}</li>
+                            <li key={uniqid()} className='text-sm md:text-base'>{item}</li>
                         ))}
                         
                     </span>
@@ -30,7 +31,7 @@ const Footer = () => {
                     <span>
                         <p className='mb-2 text-center sm:text-left text-lg'>Contact:</p>
                         {footer_elements[3].map((item) => (
-                            <li key={footer_elements[3].indexOf(item)} className='text-sm md:text-base'>{item}</li>
+                            <li key={uniqid()} className='text-sm md:text-base'>{item}</li>
                         ))}
                     </span>
                 </section>
@@ -39,14 +40,14 @@ const Footer = () => {
                     <ul>
                         <h3 className='mb-5 font-bold uppercase text-xl'>Resources</h3>
                         {footer_elements[0].map((item) => (
-                            <li key={footer_elements[0].indexOf(item)} className='mb-4 text-sm md:text-base'><Link href="#">{item}</Link></li>
+                            <li key={uniqid()} className='mb-4 text-sm md:text-base'><Link href="#">{item}</Link></li>
                         ))}
                     </ul>
 
                     <ul>
                         <h3 className='mb-5 font-bold uppercase text-xl'>Social</h3>
                         {footer_elements[1].map((item) => (
-                            <li key={footer_elements[1].indexOf(item)} className='mb-4 text-sm md:text-base'><Link href="#">{item}</Link></li>
+                            <li key={uniqid()} className='mb-4 text-sm md:text-base'><Link href="#">{item}</Link></li>
                         ))}
                     </ul>
 
@@ -54,9 +55,9 @@ const Footer = () => {
                         <h3 className='mb-5 font-bold uppercase text-xl'>Church</h3>
                         {footer_elements[4].map((item) => {
                             if (footer_elements[4].indexOf(item) !== 0) {
-                                return <li key={footer_elements[4].indexOf(item)} className='mb-4 text-sm md:text-base'><Link href={'#'}>{item}</Link></li>
+                                return <li key={uniqid()} className='mb-4 text-sm md:text-base'><Link href={'#'}>{item}</Link></li>
                             } else {
-                                return <li key={footer_elements[4].indexOf(item)} className='mb-4 text-sm md:text-base'>{item}</li>
+                                return <li key={uniqid()} className='mb-4 text-sm md:text-base'>{item}</li>
                             }
                         })}
                     </ul>
