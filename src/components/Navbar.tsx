@@ -21,10 +21,10 @@ const Navbar = ({ open, setOpen }: NavbarProps) => {
                             src={Logo}
                             width={47}
                             alt="new_dimension_logo"
-                            />
-                            <h3 className='text-sm hidden md:block uppercase'><span className='text-white font-bold text-lg'>New Dimension</span><br/><span className='text-white'>Church</span></h3>
+                        />
+                        <h3 className='text-sm hidden md:block uppercase'><span className='text-white font-bold text-lg'>New Dimension</span><br/><span className='text-white'>Church</span></h3>
 
-                            <Link href="#"><h2 className='text-sm sm:hidden text-white p-3 w-32 md:w-48 text-center justify-center rounded-[3rem] items-center bg-primary flex'>Plan A Visit</h2></Link>
+                        <Link href="#"><h2 className='text-sm sm:hidden text-white p-3 w-32 md:w-48 text-center justify-center rounded-[3rem] items-center bg-primary flex'>Plan A Visit</h2></Link>
                     </section>
 
                     <section className='flex gap-9 items-center'>
@@ -36,7 +36,7 @@ const Navbar = ({ open, setOpen }: NavbarProps) => {
 
                         <Link href="#"><h2 className='text-sm sm:flex text-white p-3 w-36 md:w-48 text-center justify-center rounded-[3rem] items-center bg-primary hidden'>Plan A Visit</h2></Link>
 
-                        <span onClick={() => setOpen(!open)} className='block sm:hidden cursor-pointer'><AiOutlineMenu size={30} /></span>
+                        <span onClick={() => setOpen(!open)} className='block text-white sm:hidden cursor-pointer'><AiOutlineMenu size={30} /></span>
                     </section>
                 </section>
             </div>

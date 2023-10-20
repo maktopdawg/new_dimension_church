@@ -10,7 +10,7 @@ function Header() {
     const [open, setOpen] = useState<boolean>(false)
 
     const content = (
-        <div className='relative flex flex-col justify-between praying-members min-h-screen w-screen'>
+        <div style={{backgroundImage: `url('/88.png')`}} className="relative flex flex-col justify-between bg-no-repeat bg-cover bg-center bg-fixed min-h-screen w-screen">
             <Navbar open={open} setOpen={setOpen} />
             <HeaderContent />
             <TimeSlot />

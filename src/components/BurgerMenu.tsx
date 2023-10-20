@@ -21,7 +21,7 @@ const BurgerMenu = ({ open, setOpen }: BurgerMenuProps) => {
 
                     <ul className='flex flex-col items-center gap-7'>
                         {menu_elements.map((item) => (
-                            <li key={item}><Link href='#'>{item}</Link></li>
+                            <li className='text-sm md:text-base' key={item}><Link href='#'>{item}</Link></li>
                         ))}
                     </ul>
                 </section>
