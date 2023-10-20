@@ -8,7 +8,7 @@ const footer_elements = [
     ['Facebook', 'Instagram', 'Twitter'],
     ['monte la vue hotel', '60 turaco st, norscot,', 'fourways (sandton)'],
     ['+27 (67) 871 3960', 'info@biblecollege.com'],
-    [<span>2023 HitRefresh. <b/><br/>All rights reserved.</span>, 'Privacy Policy', 'Terms of use']
+    ['Privacy Policy', 'Terms of use']
 ]
 
 const Footer = () => {
@@ -53,13 +53,10 @@ const Footer = () => {
 
                     <ul>
                         <h3 className='mb-5 font-bold uppercase text-xl'>Church</h3>
-                        {footer_elements[4].map((item) => {
-                            if (footer_elements[4].indexOf(item) !== 0) {
-                                return <li key={uniqid()} className='mb-4 text-sm md:text-base'><Link href={'#'}>{item}</Link></li>
-                            } else {
-                                return <li key={uniqid()} className='mb-4 text-sm md:text-base'>{item}</li>
-                            }
-                        })}
+                        <li className='mb-4 text-sm md:text-base'><span>2023 HitRefresh. <b/><br/>All rights reserved.</span></li>
+                        {footer_elements[4].map((item) => (
+                            <li key={uniqid()} className='mb-4 text-sm md:text-base'><Link href={'#'}>{item}</Link></li>
+                        ))}
                     </ul>
                 </section>
             </section>
