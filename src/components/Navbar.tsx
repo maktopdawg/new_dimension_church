@@ -11,7 +11,7 @@ interface NavbarProps {
 }
 
 const Navbar = ({ open, setOpen }: NavbarProps) => {
-    const menu_elements = ['About Us', "I'm New", 'Events', 'Contact Us']
+    const menu_elements = [['About Us', '/admin/home-page'], ["I'm New", '/admin/home-page'], ['Events', '/admin/events-page'], ['Contact Us', '/admin/home-page']]
     const content = (
         <nav className='relative p-4 md:p-10'>
             <div className='mx-0 md:mx-8 '>
@@ -30,7 +30,7 @@ const Navbar = ({ open, setOpen }: NavbarProps) => {
                     <section className='flex gap-9 items-center'>
                         <ul className='hidden md:flex gap-5'>
                             {menu_elements.map((item) => (
-                                <Link key={item} href="#"><li className='text-base text-white'>{item}</li></Link>
+                                <Link key={item[0]} href={item[1]}><li className='text-base text-white'>{item[0]}</li></Link>
                             ))}
                         </ul>
 
