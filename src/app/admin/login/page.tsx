@@ -6,7 +6,7 @@ import Logo from "@/assets/new dimension (logo) 1.svg";
 import { useFormik } from "formik";
 import { useRouter } from "next/navigation";
 
-function page() {
+function Page() {
   const route = useRouter();
 
   const { handleChange, values, handleSubmit } = useFormik({
@@ -77,4 +77,4 @@ function page() {
   return content;
 }
 
-export default page;
+export default Page;
