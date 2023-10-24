@@ -1,4 +1,4 @@
-"use client"
+'use client';
 
 import Link from "next/link";
 import React from "react";
@@ -8,7 +8,7 @@ interface NavbarProps {
   page: string;
 }
 
-const Navbar = ({ page }: NavbarProps) => {
+function Navbar ({ page }: NavbarProps) {
   const svg = (
     <svg
       width="12"
@@ -40,7 +40,15 @@ const Navbar = ({ page }: NavbarProps) => {
     ["Visitors", "/admin/visitors-page"],
   ];
 
-  const content = (
+  const handleLogout = () => {
+    if (typeof window !== "undefined") {
+      window.localStorage.removeItem("user");
+      window.location.reload();
+    }
+  };
+
+  // const content =
+  return  (
     <nav className="h-24 flex items-center justify-around">
       <h1 className="font-bold">New Dimensions</h1>
 
@@ -59,10 +67,7 @@ const Navbar = ({ page }: NavbarProps) => {
 
       <section>
         <button
-          onClick={() => {
-            localStorage.removeItem("user");
-            window.location.reload();
-          }}
+          onClick={handleLogout}
           className="hidden bg-primary md:flex items-center gap-4 py-2 md:text-base text-sm md:py-3 px-3 md:px-7 text-white"
         >
           Logout {svg}
@@ -75,8 +80,6 @@ const Navbar = ({ page }: NavbarProps) => {
       </section>
     </nav>
   );
-
-  return content;
 };
 
 export default Navbar;

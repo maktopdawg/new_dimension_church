@@ -1,3 +1,5 @@
+"use client"
+
 import HomeForm from '@/components/Admin/HomeForm'
 import Navbar from '@/components/Admin/Navbar'
 import AppLayout from '@/components/AppLayout'
