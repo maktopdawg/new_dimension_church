@@ -1,5 +1,6 @@
 import HomeForm from '@/components/Admin/HomeForm'
 import Navbar from '@/components/Admin/Navbar'
+import AppLayout from '@/components/AppLayout'
 import React from 'react'
 
 const page = () => {
@@ -10,7 +11,7 @@ const page = () => {
         </div>
     )
 
-    return content
+    return <AppLayout>{content}</AppLayout>
 }
 
 export default page

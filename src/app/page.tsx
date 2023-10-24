@@ -4,6 +4,7 @@ import CallToAction from '@/components/CallToAction'
 import Media from '@/components/Media'
 import JoinUs from '@/components/JoinUs'
 import Footer from '@/components/Footer'
+import Events from '@/components/Events'
 
 export default function Home() {
 
@@ -11,6 +12,7 @@ export default function Home() {
     <div className=''>
       <Header />
       <CallToAction />
+      <Events />
       <Media />
       <JoinUs />
       <Footer />
