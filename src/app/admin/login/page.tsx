@@ -13,8 +13,13 @@ function Page() {
     initialValues: { email: "", password: "" },
     onSubmit: (values) => {
       if (values.email !== "") {
-        localStorage.setItem("user", JSON.stringify({ email: values.email }));
-        route.push("/admin/home-page");
+        if (typeof window !== "undefined") {
+          window.localStorage.setItem(
+            "user",
+            JSON.stringify({ email: values.email })
+          );
+          route.push("/admin/home-page");
+        }
       }
     },
   });
